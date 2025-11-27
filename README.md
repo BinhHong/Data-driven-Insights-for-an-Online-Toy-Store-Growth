@@ -1,7 +1,9 @@
 # Description
 
 Introdudction
-
+# ETL
+- in each table Orders, Order Items, Order Item Refunds, Website Pageviews and Website Sessions: add calculated columns Day Name, Year, Start of Month, Start of Week and change data type to Date for Start of Month and Start of Week
+-- add a column Bundle Purchase which takes values "Y" if items_purchased >=2 and "N" otherwise
 
 ## Order items and Orders
 - Orders table: for each order_id there are information on product_id of the primary product (when there is a bundle purchase), the total number of purchased items, total price and total cost as well as the website session and user_id. So we lack information on which items are purchased, especially when it's a bunble purchase. These are provided in the table Order Items, where for each order_item_id we can find which order_id is associated and exact which product are ordered, each product is listed corresponding to an order_item_id.
