@@ -7,8 +7,8 @@
 - tables Website Sessions and Websites Pageviews: each website session contains some website page views, which tells which Page are viewed by users
 - add columns `Price` and `Cost` for each product in `Products` table by **Group By** and **Merge Queries**
 ## Add a table Calendar
-- using M Code to create a table `Calendar` starting from 2012-03-19 to 2015-04-02
-- add columns `Year`, `Start of Month`, `Start of Week` and `Day Name`
+- using M Code to create a table `Calendar` starting from 2012-03-19 to 2015-03-31
+- add columns `Year`, `Start of Month`,`Start of Quarter`, `Start of Week` and `Day Name`
 
 # Data Modelling
 - the field website_session_id in table Orders has distinct values and not null. So it's safe to set up a one-to-one relationship with the table Website Sessions and set Cross-filter direction as Both
