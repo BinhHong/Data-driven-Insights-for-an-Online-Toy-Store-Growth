@@ -22,6 +22,7 @@
     - add column `Weekend` for the table `Calendar`
     - add column `Years Since Launch` in the table `Products` using **Time Intelligence**
     - add column `Price Tier` in the table `Products`
+    - add column `Traffic Source` in the table `Website Sessions`
 - Measures:
     - `Quantity Sold` and `Quantity Returned`
     - `Total Orders` and `Total Returns`
@@ -39,3 +40,4 @@
 # Fragen
 - Website Sessions?
 - which sessions bring purchases? from which websites
+- most viewed pages?
