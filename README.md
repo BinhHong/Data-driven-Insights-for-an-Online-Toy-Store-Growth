@@ -31,7 +31,7 @@
     - `Total Revenue`, `Total Cost`, `Total Profit` and `Profit Margin`
     - `YTD Revenue` and `60-Day Revenue`
     - `Last Month Revenue`, `Last Month Profit`, `Last Month Orders`, `Last Month Returns`
-    - `Revenue Target`, `Orders Target`
+    - `Revenue Target`, `Orders Target`, `Profit Target`
     - `Total Sessions` and `Total Pageviews`
 - Create a table `Measure Table` in Power Query Editor and load to Front-End
 
@@ -39,5 +39,5 @@
 
 # Fragen
 - Website Sessions?
-- which sessions bring purchases? from which websites
+- which sessions bring purchases, %? from which websites
 - most viewed pages?
