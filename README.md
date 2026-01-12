@@ -25,7 +25,7 @@
     - add column `Traffic Source` in the table `Website Sessions`
 - Measures:
     - `Quantity Sold` and `Quantity Returned`
-    - `Total Orders` and `Total Returns`
+    - `Total Orders`, `Total Separate Orders` and `Total Returns`
     - `Return Rate`
     - `Weekend Orders` and `% Weekend Orders`
     - `Total Revenue`, `Total Cost`, `Total Profit` and `Profit Margin`
@@ -37,7 +37,9 @@
 
 
 
-# Fragen
+# Fragen und Aufgabe
 - Website Sessions?
 - which sessions bring purchases, %? from which websites
 - most viewed pages?
+- when Traffic Source changes, only Total Orders change. Why?
+- set PK for tables
