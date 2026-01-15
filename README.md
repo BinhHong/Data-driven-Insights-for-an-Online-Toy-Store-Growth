@@ -11,6 +11,7 @@
 - add columns `Year`, `Start of Month`,`Start of Quarter`, `Start of Week` and `Day Name`
 
 # Data Modelling
+- first of all, the PK's are defined for each table
 - the field website_session_id in table Orders has distinct values and not null. So it's safe to set up a one-to-one relationship with the table Website Sessions and set Cross-filter direction as Both
 - 3 dimension tables are `Calendar`, `Products` and `Website Sessions` and 3 fact tables are `Order Items`, `Order Item Refunds` and `Orders`
 - the tables `Data Dictionary` and `Measure Table` are isolated
@@ -39,7 +40,8 @@
 
 # Fragen und Aufgabe
 - Website Sessions?
-- which sessions bring purchases, %? from which websites
-- most viewed pages?
+- which sessions bring purchases, %? from which websites (done, sessions-orders is 1-1)
+- most viewed pages? (done)
 - when Traffic Source changes, only Total Orders change. Why?
-- set PK for tables
+- set PK for tables (done!)
+- create a Field Parameter
