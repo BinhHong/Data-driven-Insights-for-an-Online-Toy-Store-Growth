@@ -36,7 +36,10 @@
     - `Total Sessions` and `Total Pageviews`
 - Create a table `Measure Table` in Power Query Editor and load to Front-End
 
+# Edit interactions in each Page
 
+# Adding some bookmarks
+- add a button to clear all filters for Exec Page
 
 # Fragen und Aufgabe
 - Website Sessions?
@@ -45,3 +48,4 @@
 - when Traffic Source changes, only Total Orders change. Why?
 - set PK for tables (done!)
 - create a Field Parameter
+- symbol for Website details
