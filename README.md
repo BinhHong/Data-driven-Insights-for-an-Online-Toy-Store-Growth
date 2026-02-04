@@ -38,8 +38,11 @@
 
 # Edit interactions in each Page
 
-# Adding some bookmarks
+# Add some bookmarks
 - add a button to clear all filters for Exec Page
+
+# Add navigation buttons 
+- to move betweeen pages conviniently
 
 # Fragen und Aufgabe
 - Website Sessions?
