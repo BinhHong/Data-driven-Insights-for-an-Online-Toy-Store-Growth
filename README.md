@@ -21,29 +21,17 @@ In this project various dashboards for the business situation of an online toy s
 - the tables `Data Dictionary` and `Measure Table` are isolated
 - the FK order_id, created_at and product_id in fact table `Order Items` as well as order_id and created_at in the table `Order Item Refunds` are hidden in Report View
 - in Table View, all date fields are updated using Short Date format. Furthermore, the fields price_usd and cogs_usd are updated to currency format
+- adding DAX calculated columns and measures:
+    - Calculated columns:`Weekend` for the table `Calendar`, `Years Since Launch` for the table `Products` using **Time Intelligence**, `Price Tier` in the table `Products` and `Traffic Source` for the table `Website Sessions`
+    - Measures: `Quantity Sold` and `Quantity Returned`, `Total Orders`, `Total Separate Orders` and `Total Returns`, `Return Rate`, `Weekend Orders` and `% Weekend Orders`, `Total Revenue`, `Total Cost`, `Total Profit` and `Profit Margin`, `YTD Revenue` and `60-Day Revenue`, `Last Month Revenue`, `Last Month Profit`, `Last Month Orders`, `Last Month Returns`, `Revenue Target`, `Orders Target`, `Profit Target`, `Total Sessions` and `Total Pageviews`
+- Create a table `Measure Table` in Power Query Editor and load to Front-End
 - finally a snowflake schema is used
 
 ![](Images/Data_modelling.png?raw=true)
 
 
 
-#  Adding DAX calculated columns and measures
-- Calculated columns:
-    - add column `Weekend` for the table `Calendar`
-    - add column `Years Since Launch` in the table `Products` using **Time Intelligence**
-    - add column `Price Tier` in the table `Products`
-    - add column `Traffic Source` in the table `Website Sessions`
-- Measures:
-    - `Quantity Sold` and `Quantity Returned`
-    - `Total Orders`, `Total Separate Orders` and `Total Returns`
-    - `Return Rate`
-    - `Weekend Orders` and `% Weekend Orders`
-    - `Total Revenue`, `Total Cost`, `Total Profit` and `Profit Margin`
-    - `YTD Revenue` and `60-Day Revenue`
-    - `Last Month Revenue`, `Last Month Profit`, `Last Month Orders`, `Last Month Returns`
-    - `Revenue Target`, `Orders Target`, `Profit Target`
-    - `Total Sessions` and `Total Pageviews`
-- Create a table `Measure Table` in Power Query Editor and load to Front-End
+#  
 
 # Edit interactions in each Page
 
