@@ -37,11 +37,11 @@ In this project various dashboards for the business situation of an online toy s
 - add some bookmarks
 - add a button to clear all filters for Exec Page
 - add navigation buttons to move betweeen pages conviniently
-
+**Executive Dashboard**
 ![Executive Dashboard](Images/exec.png?raw=true)
-
+**Product Details**
 ![Product Details](Images/product.png?raw=true)
-
+**Website Details**
 ![Website Details](Images/website.png?raw=true)
 
 # Fragen und Aufgabe
