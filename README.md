@@ -1,5 +1,5 @@
 # Introduction
-- in this project various dashboards for the business situation of an online toy store are created with Power BI Desktop, in order to gain insightful views of the growth and furthermore, bring up some insights to improve the situation.
+In this project various dashboards for the business situation of an online toy store are created with Power BI Desktop, in order to gain insightful views of the growth and furthermore, bring up some insights to improve the situation.
 # ETL Process
 - after being extracted, the data is carefully cleaned and after a thorough analysis, many transformations are carried out.
 - `Orders` and `Order Items` tables sounds similar but serve different purposes: Orders table shows total prices and costs while Order Items table lists in detail every item in each order
@@ -22,7 +22,7 @@
 - the FK order_id, created_at and product_id in fact table `Order Items` as well as order_id and created_at in the table `Order Item Refunds` are hidden in Report View
 - in Table View, all date fields are updated using Short Date format. Furthermore, the fields price_usd and cogs_usd are updated to currency format
 - finally a snowflake schema is used
-
+![](Images/data modelling.png)
 
 #  Adding DAX calculated columns and measures
 - Calculated columns:
