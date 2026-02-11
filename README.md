@@ -23,7 +23,7 @@ In this project various dashboards for the business situation of an online toy s
 - in Table View, all date fields are updated using Short Date format. Furthermore, the fields price_usd and cogs_usd are updated to currency format
 - finally a snowflake schema is used
 
-![](Images/Data modelling.png?raw=true)
+![](Images/Data_modelling.png?raw=true)
 
 
 
