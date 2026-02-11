@@ -31,15 +31,18 @@ In this project various dashboards for the business situation of an online toy s
 
 
 
-#  
-
-# Edit interactions in each Page
-
-# Add some bookmarks
+#  Visualization
+- 3 reports are created: `Executive Dashboard`, `Product Details` and `Website Details`
+- edit interactions in each Page
+- add some bookmarks
 - add a button to clear all filters for Exec Page
+- add navigation buttons to move betweeen pages conviniently
 
-# Add navigation buttons 
-- to move betweeen pages conviniently
+![Executive Dashboard](Images/exec.png?raw=true)
+
+![Product Details](Images/product.png?raw=true)
+
+![Website Details](Images/website.png?raw=true)
 
 # Fragen und Aufgabe
 - Website Sessions?
