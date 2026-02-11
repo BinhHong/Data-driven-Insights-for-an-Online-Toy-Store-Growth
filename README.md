@@ -22,7 +22,10 @@ In this project various dashboards for the business situation of an online toy s
 - the FK order_id, created_at and product_id in fact table `Order Items` as well as order_id and created_at in the table `Order Item Refunds` are hidden in Report View
 - in Table View, all date fields are updated using Short Date format. Furthermore, the fields price_usd and cogs_usd are updated to currency format
 - finally a snowflake schema is used
-![](Images/data modelling.png)
+
+![](Images/Data modelling.png?raw=true)
+
+
 
 #  Adding DAX calculated columns and measures
 - Calculated columns:
