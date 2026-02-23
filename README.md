@@ -35,7 +35,6 @@ Data extraction, transformation, and loading (ETL) are performed in **Power Quer
 The data model is designed following dimensional modeling best practices:
 
 * Primary keys (PKs) are defined for each table.
-* The field `website_session_id` in the `Orders` table contains distinct, non-null values, allowing a one-to-one relationship with the `Website Sessions` table. The cross-filter direction is set to **Both**.
 * Dimension tables:
 
   * `Calendar`
@@ -46,6 +45,7 @@ The data model is designed following dimensional modeling best practices:
   * `Orders`
   * `Order Items`
   * `Order Item Refunds`
+  * `Website Pageviews`
 * The `Data Dictionary` and `Measure Table` tables are kept isolated from the main schema.
 * Foreign key fields (`order_id`, `created_at`, `product_id`) in the `Order Items` table and (`order_id`, `created_at`) in the `Order Item Refunds` table are hidden in Report View.
 * In Table View, all date fields use the **Short Date** format, while `price_usd` and `cogs_usd` fields are formatted as currency.
@@ -71,7 +71,7 @@ The data model is designed following dimensional modeling best practices:
 
 * The final model follows a **snowflake schema** design.
 
-![Data Model](Images/Data_modelling.png?raw=true)
+![Data Model](Images/modelling.png?raw=true)
 
 ---
 
