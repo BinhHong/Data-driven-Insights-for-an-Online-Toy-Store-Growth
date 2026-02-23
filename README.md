@@ -69,7 +69,7 @@ The data model is designed following dimensional modeling best practices:
 
 * A dedicated `Measure Table` is created in Power Query and loaded into the front-end to organize all measures.
 
-* The final model follows a **snowflake schema** design.
+* The final model follows a **galaxy schema** design.
 
 ![Data Model](Images/modelling.png?raw=true)
 
@@ -101,3 +101,10 @@ Key visualization features include:
 ### Website Details
 
 ![Website Details](Images/website.png?raw=true)
+
+
+# Einige Fragen
+- conversion rate: Conversion Rate by Traffic Source
+Conversion Rate by Device
+Conversion Rate by Weekend vs Weekday
+- created schon Parameter in Fields, not so succesfully
