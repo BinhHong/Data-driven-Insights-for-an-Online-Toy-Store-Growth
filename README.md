@@ -39,13 +39,13 @@ The data model is designed following dimensional modeling best practices:
 
   * `Calendar`
   * `Products`
-  * `Website Sessions`
 * Fact tables:
 
   * `Orders`
   * `Order Items`
   * `Order Item Refunds`
   * `Website Pageviews`
+  * `Website Sessions`
 * The `Data Dictionary` and `Measure Table` tables are kept isolated from the main schema.
 * Foreign key fields (`order_id`, `created_at`, `product_id`) in the `Order Items` table and (`order_id`, `created_at`) in the `Order Item Refunds` table are hidden in Report View.
 * In Table View, all date fields use the **Short Date** format, while `price_usd` and `cogs_usd` fields are formatted as currency.
