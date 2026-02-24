@@ -65,7 +65,7 @@ The data model is designed following dimensional modeling best practices:
   * Time-based metrics: `Weekend Orders`, `% Weekend Orders`, `YTD Revenue`, `60-Day Revenue`, `Last Month Revenue`, `Last Month Profit`, `Last Month Orders`, `Last Month Returns`
   * Financial KPIs: `Total Revenue`, `Total Cost`, `Total Profit`, `Profit Margin`
   * Targets: `Revenue Target`, `Orders Target`, `Profit Target`
-  * Web analytics: `Total Sessions`, `Total Pageviews`
+  * Web analytics: `Total Sessions`, `Total Pageviews`, `Conversion Rate`
 
 * A dedicated `Measure Table` is created in Power Query and loaded into the front-end to organize all measures.
 
