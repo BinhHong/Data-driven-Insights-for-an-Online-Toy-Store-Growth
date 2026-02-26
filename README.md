@@ -83,8 +83,6 @@ Three interactive Power BI reports are developed:
 * **Product Details**
 * **Website Details**
 
-A dedicated **Key Insights and Recommendations** page is included as the final section of the report to summarize major findings and strategic implications.
-
 Key visualization features include:
 
 * Customized visual interactions on each report page to control filtering behavior
@@ -106,5 +104,7 @@ Key visualization features include:
 
 
 # Key Insights and Recommendations
+A dedicated **Key Insights and Recommendations** page is included as the final section of the report. This page consolidates the most important analytical findings from the Executive, Product, and Website dashboards and translates them into actionable business recommendations.
 
+The objective of this page is to move beyond data visualization and provide strategic direction based on performance trends, product profitability, return behavior, and conversion rate analysis.
 ![](Images/key_insight.png?raw=true)
