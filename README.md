@@ -103,8 +103,6 @@ Key visualization features include:
 ![Website Details](Images/website.png?raw=true)
 
 
-# Einige Fragen
-- conversion rate: Conversion Rate by Traffic Source
-Conversion Rate by Device
-Conversion Rate by Weekend vs Weekday
-- created schon Parameter in Fields, not so succesfully
+# Key Insights and Recommendations
+
+![](Images/key_insight.png?raw=true)
