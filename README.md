@@ -83,11 +83,13 @@ Three interactive Power BI reports are developed:
 * **Product Details**
 * **Website Details**
 
+A dedicated **Key Insights and Recommendations** page is included as the final section of the report to summarize major findings and strategic implications.
+
 Key visualization features include:
 
-* Edited visual interactions on each report page
-* Use of bookmarks for enhanced navigation and storytelling
-* A dedicated button on the Executive Dashboard to clear all filters
+* Customized visual interactions on each report page to control filtering behavior
+* Use of bookmarks to enhance navigation and support storytelling
+* A dedicated “Clear Filters” button on the Executive Dashboard for improved usability
 * Navigation buttons for seamless movement between report pages
 
 ### Executive Dashboard
