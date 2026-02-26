@@ -92,7 +92,7 @@ Key visualization features include:
 
 ### Executive Dashboard
 
-![Executive Dashboard](Images/exec1.png?raw=true)
+![Executive Dashboard](Images/exec.png?raw=true)
 
 ### Product Details
 
