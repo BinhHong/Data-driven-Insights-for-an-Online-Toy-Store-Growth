@@ -1,8 +1,28 @@
-# Introduction
+E-commerce Revenue Intelligence Dashboard
 
-This project presents a set of Power BI dashboards designed to analyze the business performance of an online toy store. The goal is to provide clear, insightful views of growth trends and to derive actionable insights that can help improve overall business performance.
 
----
+# Business Problem
+
+An online toy retailer is selling products directly through its website. Revenue is generated through online product sales. The dataset captures the customer journey from website visit to refund.
+This project analyzes the complete customer journey, from website acquisition through product refunds, to identify opportunities for improving business performance. The objective of this project is to identify the key drivers of traffic, conversion, revenue, and refunds across the customer journey and present actionable insights through an interactive Power BI dashboard.
+
+Key business questions include:
+- How has revenue changed over time?
+- What are the trends in orders, sessions, and conversion rate over time?
+- What is the Average Order Value (AOV), and how has it changed over time?
+- Which traffic sources generate the most sessions, orders, and revenue?
+- Which marketing channels have the highest conversion rates?
+- How do new and repeat visitors differ in conversion performance?
+- Which products generate the highest revenue and gross profit?
+- Which products have the highest refund rates?
+- How common are bundle purchases, and what impact do they have on revenue?
+- How efficiently do website sessions convert into completed orders?
+- Which landing pages attract the most traffic and conversions?
+- How much revenue is lost through refunds over time?
+- Are refunds concentrated in specific products or order types?
+- Which devices generate the best conversion performance?
+
+For detailed business context, see: docs/01_Business_Understanding.md
 
 # ETL Process
 
@@ -109,3 +129,9 @@ A dedicated **Key Insights and Recommendations** page is included as the final s
 The objective of this page is to move beyond data visualization and provide strategic direction based on performance trends, product profitability, return behavior, and conversion rate analysis.
 
 ![](Images/key_insight.png?raw=true)
+
+
+# Next:
+- create date table (done)
+- correct Product table, no need transformation (done)
+- correct readme with business questions and etl process
