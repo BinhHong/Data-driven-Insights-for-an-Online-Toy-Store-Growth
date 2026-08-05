@@ -11,7 +11,7 @@ Key business questions include:
 - What are the trends in orders, sessions, and conversion rate over time?
 - What is the Average Order Value (AOV), and how has it changed over time?
 - Which traffic sources generate the most sessions, orders, and revenue?
-- Which marketing channels have the highest conversion rates?
+- Which traffic sources have the highest conversion rates?
 - How do new and repeat visitors differ in conversion performance?
 - Which products generate the highest revenue and gross profit?
 - Which products have the highest refund rates?
@@ -135,3 +135,5 @@ The objective of this page is to move beyond data visualization and provide stra
 - create date table (done)
 - correct Product table, no need transformation (done)
 - correct readme with business questions and etl process
+- add order_date in Website sessions, connect Calendar to Sessions and set inactive (done)
+- add a date in Website sessions for Pageview, connect Calendar to Sessions and set inactive
