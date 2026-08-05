@@ -17,6 +17,7 @@ order_item_refund_id, order_item_id, order_id: whole number
 created_at: date
 refund_amount_usd: decimal_number
 - this table links each `order_item_refund_id` to an `order_item_id`. Since each order item corresponds to a single product, a single `order_id` may appear multiple times. The table contains 1,731 rows but only 1,723 distinct `order_id` values, indicating that some bundle orders involve multiple returned products.
+- another column `product_id` is created using Merge Query with table `Order Items`
 
 ## Order Items
 - Purpose: provides details corresponding to each item that has been ordered to the grain of order-item. The information includes order-item-id which is PK, order_id and product_id which are FKs, created_at indicating the timestamp when the item was placed, is_primary_item being a flag determining if the item is primary in the order, price_usd and cogs_usd showing the price and cost of the product.
@@ -29,7 +30,7 @@ price_usd, cogs_usd: decimal_number
 ## Orders
 - gives details on each order: each order_id (PK) has timestamp, website_session_id (FK) to which it belongs to, user_id (FK) showing which user placed the order, primary_product_id showing the id of the primary product in the order, items_purchased indicating the number of purchased products, price_usd and cogs_usd
 - grain: order level
-- 32313 rows. There are no nulls or empty strings, no duplicates
+- 32,313 rows. There are no nulls or empty strings, no duplicates
 - data type for each column was changed:
 order_id, website_session_id, user_id, primary_product_id, items_purchased: whole number
 created_at: date
@@ -55,10 +56,12 @@ created_at: date
 ## Website Sessions
 - each website_session_id (PK) was recorded together with information on timestamp, used_id (FK) referring the user who made this session, is_repeat_session indicating if the session is repeated, utm information, device_type and http_referer
 - grain: website session, one row = one website session
-- there are 472871 rows, no nulls or empty strings, no duplicates
+- there are 472,871 rows, no nulls or empty strings, no duplicates
 - data types should be corrected:
 website_session_id, user_id, is_repeat_session: whole number
 created_at: date
+- each website session produces 0 or 1 orders. In addition, the number of rows in `Orders` table is exactly the number of distinct `website_session_id` inside that table (32,313). So the connection between `Orders` and `Website Sessions` tables are one to one.
+- another Query `Session Landing Pages` was created to serve as a helper for determining the landing page within each website session.
 
 # Cross-table Validation
 
@@ -80,6 +83,7 @@ Based on the available profiling, no obvious referential integrity issues were i
 - Products is the primary product dimension.
 - Refunds should relate to Order Items rather than directly to Products.
 - The Data Dictionary will be used to confirm relationships and key definitions during semantic modeling.
+- Orders and pageviews are filtered through Website Sessions to prevent ambiguous relationship paths. Another column `order_date` was added to `Website Sessions`.
 
 # Analytical Scope
 
