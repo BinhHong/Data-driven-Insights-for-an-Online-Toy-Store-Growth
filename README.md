@@ -19,7 +19,7 @@ Key business questions include:
 - How efficiently do website sessions convert into completed orders?
 - Which landing pages attract the most traffic and conversions?
 - How much revenue is lost through refunds over time?
-- Are refunds concentrated in specific products or order types?
+- Are refunds concentrated in specific products?
 - Which devices generate the best conversion performance?
 
 For detailed business context, see: docs/01_Business_Understanding.md
@@ -136,4 +136,6 @@ The objective of this page is to move beyond data visualization and provide stra
 - correct Product table, no need transformation (done)
 - correct readme with business questions and etl process
 - add order_date in Website sessions, connect Calendar to Sessions and set inactive (done)
-- add a date in Website sessions for Pageview, connect Calendar to Sessions and set inactive
+- add a date in Website sessions for Pageview, connect Calendar to Sessions and set inactive (done)
+- creating metrics in order
+ base
