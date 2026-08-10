@@ -138,4 +138,6 @@ The objective of this page is to move beyond data visualization and provide stra
 - add order_date in Website sessions, connect Calendar to Sessions and set inactive (done)
 - add a date in Website sessions for Pageview, connect Calendar to Sessions and set inactive (done)
 - creating metrics in order
- base
+ base: order and product revenue and cost, orders, sessions, converted sessions, conversion rate, refund amount, refunded items,.... (done)
+- check redundant metrics
+- time intelligence metrics
