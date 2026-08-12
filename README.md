@@ -40,7 +40,7 @@ Data extraction, transformation, and loading (ETL) are performed in **Power Quer
 * The `Order Item Refunds` table links each `order_item_refund_id` to an `order_item_id`. Since each order item corresponds to a single product, a single `order_id` may appear multiple times. The table contains 1,731 rows but only 1,723 distinct `order_id` values, indicating that some bundle orders involve multiple returned products.
 * The `Website Sessions` and `Website Pageviews` tables capture user behavior, where each website session consists of multiple page views.
 * In the `Products` table, `Price` and `Cost` columns are created using **Group By** and **Merge Queries** operations.
-* A `Calendar` table is generated using **M code**, covering the period from **2012-03-19** to **2015-03-31**, with additional columns:
+* A `Calendar` table is generated using **M code**, covering the period from **2012-03-19** to **2015-04-01**, with additional columns:
 
   * `Year`
   * `Start of Month`
@@ -139,5 +139,7 @@ The objective of this page is to move beyond data visualization and provide stra
 - add a date in Website sessions for Pageview, connect Calendar to Sessions and set inactive (done)
 - creating metrics in order
  base: order and product revenue and cost, orders, sessions, converted sessions, conversion rate, refund amount, refunded items,.... (done)
-- check redundant metrics
+- check redundant metrics (done)
 - time intelligence metrics
+- validation: order revenue = product revenue?
+- check until 4. calculated columns, so will check dax text syntax again before deleting Traffic Source and move on others.
