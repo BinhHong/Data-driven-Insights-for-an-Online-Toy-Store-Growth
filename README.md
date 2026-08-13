@@ -142,4 +142,4 @@ The objective of this page is to move beyond data visualization and provide stra
 - check redundant metrics (done)
 - time intelligence metrics
 - validation: order revenue = product revenue?
-- check until 4. calculated columns, so will check dax text syntax again before deleting Traffic Source and move on others.
+- check until 8. xong Bundle Orders
