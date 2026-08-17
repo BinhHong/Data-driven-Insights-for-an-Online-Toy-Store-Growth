@@ -95,7 +95,7 @@ The Calendar table directly filters the refund fact table. This date basis is us
 ## Orders:
 - base measure
 - definition: number of completed orders.
-- ```DAX
+```DAX
 Orders =
 COUNTROWS ( Orders )
 ```
