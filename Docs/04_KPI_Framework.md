@@ -106,8 +106,7 @@ COUNTROWS ( Orders )
 
 - definition: Gross sales value of completed orders before refunds.
 - base measure
-- ```DAX
-Order Revenue =
+```DAX: Order Revenue = 
 SUM ( Orders[price_usd] )
 ```
 
