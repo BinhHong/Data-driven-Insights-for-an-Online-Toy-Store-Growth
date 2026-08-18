@@ -140,6 +140,67 @@ The objective of this page is to move beyond data visualization and provide stra
 - creating metrics in order
  base: order and product revenue and cost, orders, sessions, converted sessions, conversion rate, refund amount, refunded items,.... (done)
 - check redundant metrics (done)
-- time intelligence metrics
+- time intelligence metrics (done)
 - validation: order revenue = product revenue?
-- check until 8. xong Bundle Orders
+- check until 8. xong Bundle Orders (done)
+- KPI docu till 04.Product metrics
+
+# Technical Steps:
+- create a report-friendly DAX category such as "New" / "Repeat" and hide the raw 0/1 flag.
+
+# 9. Business Question to KPI Mapping
+
+| Business Question | Main KPIs |
+|---|---|
+| How has revenue changed over time? | Revenue by Order Date, Revenue MoM %, YTD Revenue |
+| What are the trends in orders, sessions, and conversion rate over time? | Orders by Order Date, Sessions, Conversion Rate, Orders MoM %, Sessions MoM %, Conversion Rate MoM pp |
+| What is the Average Order Value, and how has it changed over time? | Average Order Value, Previous Month AOV, AOV MoM % |
+| Which traffic sources generate the most sessions, orders, and revenue? | Sessions, Converted Sessions / Orders, Order Revenue |
+| Which traffic sources have the highest conversion rates? | Conversion Rate |
+| How do new and repeat visitors differ in conversion performance? | Sessions, Converted Sessions, Conversion Rate, Revenue per Session |
+| Which products generate the highest revenue and gross profit? | Product Revenue, Product Gross Profit, Product Profit Margin, Units Sold by Product |
+| Which products have the highest refund rates? | Product Refund Rate, Refunded Items |
+| How common are bundle purchases, and what impact do they have on revenue? | Bundle Orders, Bundle Order Share, Revenue by Order Date, Average Order Value |
+| How efficiently do website sessions convert into completed orders? | Sessions, Converted Sessions, Conversion Rate, Revenue per Session |
+| Which landing pages attract the most traffic and conversions? | Sessions, Converted Sessions, Conversion Rate |
+| How much revenue is lost through refunds over time? | Refund Amount, Previous Month Refund Amount, Refund Amount MoM % |
+| Are refunds concentrated in specific products? | Refund Amount, Refunded Items, Product Refund Rate |
+| Which devices generate the best conversion performance? | Sessions, Converted Sessions, Conversion Rate, Revenue per Session |
+
+
+# 11. Metric Design Principles
+
+The following principles are applied throughout the semantic model:
+
+1. **Measures are preferred over implicit aggregations.**
+2. **Business metrics are centralized in a dedicated measure table.**
+3. **Different analytical grains are kept explicit.**
+   - Orders are used for order-level economics.
+   - Order Items are used for product-level economics.
+   - Website Sessions are used for acquisition and conversion.
+   - Refunds are used for return activity.
+4. **Revenue is not treated as a single universal measure.**
+   - `Order Revenue` supports session-based analysis.
+   - `Revenue by Order Date` supports sales trends.
+   - `Product Revenue` supports product analysis.
+5. **Session Date and Order Date are intentionally separated.**
+6. **Conversion is defined at session grain.**
+7. **Product refund rate is not interpreted as a monthly cohort metric without additional cohort logic.**
+8. **Dimensions provide segmentation; duplicate segment-specific measures are avoided.**
+9. **Numeric measures return numeric values or BLANK, not text fallback values.**
+10. **Time-intelligence measures are created only when they support a defined business question.**
+
+
+
+# 12. KPI Framework Summary
+
+The metric framework is organized into six analytical domains:
+
+- **Sales** — revenue, orders, profitability, AOV, and bundle behavior
+- **Product** — units, product revenue, product profitability, and product mix
+- **Website & Conversion** — sessions, converted sessions, conversion rate, and revenue efficiency
+- **Customer & Visitor** — unique visitors and repeat engagement
+- **Returns** — refund value, refunded items/orders, and product refund rate
+- **Time Intelligence** — month-over-month and year-to-date performance comparisons
+
+Together, these metrics provide the analytical foundation required to answer the project's selected business questions while maintaining clear definitions, consistent date logic, and appropriate fact-table grain.
