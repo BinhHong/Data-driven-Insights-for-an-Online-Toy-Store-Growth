@@ -1,6 +1,6 @@
 # KPI Framework and Metric Dictionary
 
-The framework is designed around the project's selected business questions and separates metrics by business domain. Each KPI is documented with its business meaning, calculation logic, source, date basis, and intended analytical use.
+The framework is designed around the project's selected business questions and separates metrics by business domain. Each KPI is documented with its business meaning, calculation logic and important notes.
 
 # 1. KPI Hierarchy
 
