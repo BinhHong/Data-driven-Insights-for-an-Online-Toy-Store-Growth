@@ -7,20 +7,19 @@ An online toy retailer is selling products directly through its website. Revenue
 This project analyzes the complete customer journey, from website acquisition through product refunds, to identify opportunities for improving business performance. The objective of this project is to identify the key drivers of traffic, conversion, revenue, and refunds across the customer journey and present actionable insights through an interactive Power BI dashboard.
 
 Key business questions include:
-- How has revenue changed over time?
-- What are the trends in orders, sessions, and conversion rate over time?
-- What is the Average Order Value (AOV), and how has it changed over time?
-- Which traffic sources generate the most sessions, orders, and revenue?
-- Which traffic sources have the highest conversion rates?
-- How do new and repeat visitors differ in conversion performance?
-- Which products generate the highest revenue and gross profit?
-- Which products have the highest refund rates?
-- How common are bundle purchases, and what impact do they have on revenue?
-- How efficiently do website sessions convert into completed orders?
-- Which landing pages attract the most traffic and conversions?
-- How much revenue is lost through refunds over time?
-- Are refunds concentrated in specific products?
-- Which devices generate the best conversion performance?
+
+- What drove revenue growth over time — higher traffic, stronger conversion, or increasing order value?
+- How have orders, sessions, conversion rate, and Average Order Value evolved over time?
+- Which traffic sources contribute the most acquisition volume, and which generate the strongest conversion efficiency and revenue per session?
+- How does conversion performance differ between desktop and mobile, and does the device gap persist across traffic sources and comparable landing pages?
+- How do new and repeat sessions differ in conversion and revenue efficiency, and did changes in repeat-session behavior contribute to overall conversion improvement?
+- Which products drive revenue and gross profit, and how has their relative contribution changed as the portfolio expanded?
+- How do product margin and refund risk differ across the portfolio?
+- How important are bundle purchases to order value and revenue, and what drove the increase in AOV?
+- Which landing pages attract the most traffic and conversions, and to what extent can differences in performance be explained by device composition and operating period?
+- How have refund losses changed as the business has grown?
+- Are refund losses and refund rate concentrated in specific products?
+- Were major refund spikes caused by broad deterioration or isolated product-specific anomalies?
 
 For detailed business context, see: docs/01_Business_Understanding.md
 
