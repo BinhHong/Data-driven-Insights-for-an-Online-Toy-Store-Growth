@@ -68,13 +68,13 @@ A dedicated KPI framework separates Session Date, Order Date, Product Sale Date,
 
 Key techniques include:
 
-- [Data profiling and validation](Docs/02_Data_Audit.md)
+- [Data profiling and validation](Docs/01_Data_Audit.md)
 - Power Query transformation
 - [Fact constellation modeling](Images/Screenshots/modelling.png)
 - Dedicated Calendar table
 - Explicit DAX measures, including USERELATIONSHIP for alternate date roles
 - Time intelligence: Previous Month, Month-over-month and YTD 
-- [KPI Framework](Docs/03_KPI_Framework.md) and business driver decomposition
+- [KPI Framework](Docs/02_KPI_Framework.md) and business driver decomposition
 - Cross-filtered acquisition, conversion, product, and refund analysis
 
 # Key Business Insights
