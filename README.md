@@ -25,8 +25,6 @@ Key business questions include:
 - Are refund losses and refund rate concentrated in specific products?
 - Were major refund spikes caused by broad deterioration or isolated product-specific anomalies?
 
-For detailed business context, see: [Business Understanding](Docs/01_Business_Understanding.md).
-
 # Dashboard Preview
 
 Report pages:
