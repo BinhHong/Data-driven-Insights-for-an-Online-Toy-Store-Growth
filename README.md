@@ -63,7 +63,7 @@ The semantic model separates business processes operating at different grains:
 
 A dedicated KPI framework separates Session Date, Order Date, Product Sale Date, and Refund Date, preventing misleading comparisons across different business processes.
 
-Key techniques include:
+### Key techniques include:
 
 - [Data profiling and validation](Docs/01_Data_Audit.md)
 - Power Query transformation
@@ -104,7 +104,7 @@ Detailed findings and recommendations are available in [Insights and Business Re
 
 ## Documentation
 
-Detailed project documentation is available in the [`Docs`](Docs/) folder:
+Detailed project documentation is available in the [Docs](Docs/) folder:
 
 - [Business Understanding](Docs/00_Business_Understanding.md) - business context, analytical questions, scope, and limitations
 - [Data Audit](Docs/01_Data_Audit.md) - data profiling, grain, keys, validation, and modeling implications
